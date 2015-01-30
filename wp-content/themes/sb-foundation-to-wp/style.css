@@ -1,0 +1,379 @@
+/*
+Theme Name: SB Foundation to WordPress
+Theme URI: http://socialbrew.us/test/sb-foundation-to-wordpress
+Author: Mark Rakow
+Author URI: http://markerakow.com/
+Description: Starter theme for new SocialBrew website created with Foundation 5
+Version: 1.0
+License: GNU General Public License v2 or later
+License: URI http://www.gnu.org/license/gpl-2.0.html
+Text Domain: sb-foundation-to-wordpress
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* SocialBrew Bubble Motif and Foundation Tweaks */
+
+body, .sb-landing-feature {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url('/sblocalwp.com/wp-content/themes/sb-foundation-to-wp/images/sb-bubbles-bg.png');
+}
+
+.sb-last-row {
+	margin-bottom: 3em;
+}
+
+.slideshow-wrapper {
+	width: 100%;
+  height: 100%;
+}
+
+.orbit-container {
+	height: 100%;
+}
+
+
+/* SocialBrew Sidebar Bubble Motif */
+
+.sb-sidebar {
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+	background-color: #204042;
+	color: #d0f4f5;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url('/sblocalwp.com/wp-content/themes/sb-foundation-to-wp/images/sb-bubbles-bg-lite.png');
+	border-left: 0px;
+}
+
+
+/* SocialBrew Sidebar Widget Tweaks */
+
+.sb-sidebar .widget {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-top: 0;
+	margin-bottom: 3em;
+}
+
+.sb-sidebar .widget h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.25em;
+	color: #8ae3e6;
+}
+
+.sb-sidebar .widget a {
+	color: #8ae3e6;
+	font-weight: 700;
+}
+
+.sb-sidebar .widget a:hover {
+	color: #14c6cc;
+	font-weight: 700;
+}
+
+.sb-widget .widget li {
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+}
+
+
+/* SocialBrew Footer Widget Tweeks */
+
+footer .widget {
+	margin-bottom: 0px;
+}
+
+footer .widget h3 {
+	color: #d6c143;
+}
+
+footer .widget .button {
+	margin-top: 0px;
+}
+
+
+/* SocialBrew Sidebar Table Styling Tweeks */
+
+
+.sb-sidebar table {
+	border-color: #14c6cc;
+	background-color: #14c6cc; 
+}
+
+.sb-sidebar table thead tr {
+	background-color: #204042;
+}
+
+.sb-sidebar table tfoot td {
+	background-color: #204042;
+	border: 0px;
+}
+
+.sb-sidebar table tbody tr:nth-child(even) {
+	background-color: #196569;
+}
+
+.sb-sidebar table tbody tr:nth-child(odd) {
+	background-color: #1c7276;
+}
+
+.sb-sidebar table, .sb-sidebar table th, .sb-sidebar table td {
+	border-color: #1d5457;
+	font-family: "museo", Helvetica, Arial, sans-serif;
+	color: #8ae3e6;
+}
+
+.sb-sidebar caption {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #d0f4f5;
+}
+
+
+/* SocialBrew Menu Style Tweeks */
+
+.sticky {
+	margin-top: -45px;
+}
+
+.sb-sticky {
+	margin-top: 0px;
+}
+
+.fixed {
+	margin-top: 0px;
+}
+
+.menu-item {
+	background-color: #4f3a1a;
+}
+
+.sb-landing-widgets .columns {
+	background-color: transparent;
+	color: #fff;
+	font-weight: 300;
+}
+
+.toggle-topbar a {
+	color: rgba(136, 136, 136, 0);
+}
+
+nav .top-bar > ul #menu-menu-1 {
+	background-color: #593900 !important;
+}
+
+
+/* SocialBrew Widget Style Tweeks */
+
+.widget h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.25em;
+}
+
+.sb-landing-widgets h3 {
+	color: #ccb114;
+}
+
+/*.sb-first-row .widget {
+	margin-bottom: 0px;
+}*/
+
+/* SocialBrew Blog Style Tweeks */
+
+.sb-post {
+	margin-bottom: 0px;
+}
+
+.sb-meta {
+	list-style: none;
+	margin-left: 0px;
+}
+
+.sb-meta li {
+	display: inline;
+}
+
+.sb-meta > .date, .sb-meta > .cat {
+	font-size: .7em;
+}
+
+.cat {
+	font-weight: 700;
+}
+
+.img-container {
+	margin-bottom: 1em;
+}
+
+.reply {
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: .9em;
+}
+
+#comments, #respond h3 {
+	font-size: .9em;
+	font-weight: 700;
+	text-transform: uppercase;	
+	margin-top: 3em;
+	margin-bottom: 1em;
+	color: #916210;
+}
+
+.comment .vcard {
+	border-width: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.comment .vcard .says {
+	color: #000;
+}
+
+.commentmetadata {
+	color: #777;
+	font-size: .85em;
+	margin-top: .5em;
+}
+.commentlist, .children {
+	list-style: none;
+}
+
+.commentlist p {
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+	font-size: .9em;
+	margin-bottom: .5em;
+}
+
+#submit {
+	border-width: 0;
+	background-color: #817537;
+	color: #FFF;
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+	font-size: .75em;
+	text-transform: uppercase;
+	padding: .5em .75em;
+}
+
+#submit:hover {
+	background-color: #5e552e;
+}
+
+#commentform input {
+	margin-bottom: 2px;
+}
+
+.leader h1 {
+	font-family: "museo", Helvetica, Arial, sans-serif;
+	font-size: 1.25em;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #914517;
+	margin-bottom: 2em;
+}
+
+.sb-body-image img {
+	width: 100%;
+}
+
+.sb-first-row .field-wrap {
+	margin-bottom: .5em;
+}
+
+.sb-first-row .field-wrap label {
+	margin-bottom: 0px;
+	font-weight: 300;
+}
+
+.sb-first-row .button {
+	margin-top: .5em;
+}
+
+.ninja-forms-required-items {
+	font-size: .8em;
+	color: #d98f07;
+}
+
+.number-wrap .ninja-forms-field {
+	border: 0px;
+	width: 100%;
+}
+
+@media all and (min-width: 769px) {
+  .sb-first-row .field-wrap {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+/* SocialBrew Advanced Twitter Followers Widget Tweeks */
+
+.sb-twitter-grid {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.sb-twitter-grid li img {
+	width: 100%;
+}
+
+.widget > li, #advanced_twitter_followers_widget, #twitterWidget, #likebox, .imagelisting, .twitterFollowers, .likebox-border {
+	margin: 0px;
+	padding: 0px !important;
+}
+
+#twitterWidget #likebox ul li {
+	margin-right: 0px !important;
+}
+
+.gabfire-tweets, .textwidget p {
+	margin-left: 0px;
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+	font-size: .9em;
+}
+
+.gabfire-tweets li {
+	margin-bottom: .9em;
+}
+
+.gabfire-tweets li a {
+	color: #8ae3e6;
+}
+
+.gabfire-tweets li a:hover {
+	color: #14c6cc;
+}
+
+.widget fieldset {
+	margin-top: 0px;
+}
+
+.widget .ninja-forms-required-items {
+	color: #e6d88a;
+}
+
+.widget .ninja-forms-req {
+	background-color: #f5efd0;
+}
+
+.sb-first-row .ninja-forms-req, .sb-first-row input[type="text"] {
+	background-color: #fff5e2;
+}
+
+
+/* TO BE DELETED */
+
+/*.current-menu-item > a {
+	background-color: #bf7d00;
+}*/
