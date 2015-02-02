@@ -12,6 +12,7 @@
   <?php wp_head(); ?>
 
 </head>
+
 <body <?php body_class(); ?>>
 
   <!-- LANDING PAGE SLIDER START -->
@@ -58,7 +59,7 @@
         <li class="name">
             <h1><a href="<?php bloginfo( 'url' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/sbIcon_sm.png" alt="Social Brew Icon"><span>Social<strong>Brew</strong></span></a></h1>
         </li>          
-        <li class="toggle-topbar"><a href="#"><span>Menu</span></a></li>
+        <li class="toggle-topbar"><a href="#">Menu</a></li>
       </ul>
       <section class="top-bar-section">
         <!-- Right Nav Section -->
@@ -71,9 +72,13 @@
         ));
         ?>
         <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="#">Sign In</a></li>
-        </ul>
+        <?php
+        wp_nav_menu(array(
+            'container' => false,
+            'menu_class' => 'left',
+            'theme_location' => 'header-menu-left',
+        ));
+        ?>
       </section>
     </nav>
   </div>

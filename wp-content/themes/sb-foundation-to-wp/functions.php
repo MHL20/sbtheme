@@ -1,28 +1,71 @@
 <?php 
 
+
+// add_action('init', 'styleEnqueue');
+add_action('init', 'foundationEnqueue');
+
+// ----------------------------------------------------------------------------
+// register and enqueue styles
+// ----------------------------------------------------------------------------
+
+// function styleEnqueue() {
+//   if (!is_admin()) {
+// // enqueue theme styles
+// wp_enqueue_style('normalize_css', get_template_directory_uri()."/css/normalize.css");
+// // enqueue theme styles
+// wp_enqueue_style('app_css', get_template_directory_uri()."/css/app.css");
+// // enqueue foundation.min
+// wp_enqueue_style('style_css', get_template_directory_uri()."style.css");
+//   }
+// }
+
+// ----------------------------------------------------------------------------
+// register and enqueue scripts
+// ----------------------------------------------------------------------------
+
+function foundationEnqueue() {
+  if (!is_admin()) {
+
+// deregister core jquery
+wp_deregister_script('jquery');
+// reregister jquery 2.1.0
+wp_register_script('jquery', get_template_directory_uri()."/js/jquery.min.js", array(),'2.1.1',false);
+// register modernizr
+wp_register_script('modernizer', get_template_directory_uri()."/js/modernizr.js",array('jquery'),'2.1.1', false);
+// register foundation.min
+wp_register_script('foundation', get_template_directory_uri()."/js/foundation.min.js", array('jquery'),'2.1.1',true); 
+// register YOUR_JS_FILE_HERE
+wp_register_script('customjs', get_template_directory_uri()."/js/app.js", array('jquery'),'2.1.1',true);
+
+wp_enqueue_script(array('jquery','modernizer','foundation','customjs'));
+
+  }
+}
+
 function theme_styles() {
 
-	wp_enqueue_style( 'app_css', get_template_directory_uri() . '/css/app.css' );
-	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
+  wp_enqueue_style( 'app_css', get_template_directory_uri() . '/css/app.css' );
+  wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
-function theme_js() {
 
-	wp_enqueue_script( 'bower_modernizr', get_template_directory_uri() . '/js/modernizr.js', '', '', false );
-	wp_enqueue_script( 'bower_jquery', get_template_directory_uri() . '/js/jquery.min.js', '', '', true );
-	wp_enqueue_script( 'bower_foundation', get_template_directory_uri() . '/js/foundation.min.js', '', '', true );
-    wp_enqueue_script( 'jquery_no_conflict', get_template_directory_uri() . '/js/noconflict.js', '', '', true );
-    wp_enqueue_script( 'bower_foundation_topbar', get_template_directory_uri() . '/js/foundation.topbar.js', '', '', true );
-	wp_enqueue_script( 'bower_foundation_orbit', get_template_directory_uri() . '/js/foundation.orbit.js', '', '', true );
-    wp_enqueue_script( 'bower_foundation_equalizer', get_template_directory_uri() . '/js/foundation.equalizer.js', '', '', true );
-	wp_enqueue_script( 'sb_app_js', get_template_directory_uri() . '/js/app.js', '', '', true );
+// function theme_js() {
 
-}
-add_action( 'wp_enqueue_scripts', 'theme_js' );
+//   wp_enqueue_script( 'bower_modernizr', get_template_directory_uri() . '/js/modernizr.js', '', '', false );
+//   wp_enqueue_script( 'bower_jquery', get_template_directory_uri() . '/js/jquery.min.js', '', '', true );
+//   wp_enqueue_script( 'bower_foundation', get_template_directory_uri() . '/js/foundation.min.js', '', '', true );
+//   wp_enqueue_script( 'bower_foundation_orbit', get_template_directory_uri() . '/js/foundation.orbit.js', '', '', true );
+//   wp_enqueue_script( 'bower_foundation_equalizer', get_template_directory_uri() . '/js/foundation.equalizer.js', '', '', true );
+//   wp_enqueue_script( 'sb_app_js', get_template_directory_uri() . '/js/app.js', '', '', true );
 
-// add_filter( 'show_admin_bar', '__return_false' );
+// }
+// add_action( 'wp_enqueue_scripts', 'theme_js' );
+
+
+
+add_filter( 'show_admin_bar', '__return_false' );
 
 function wpt_excerpt_length( $length ) {
     return 45;
@@ -36,11 +79,12 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support('menus');
 
 function register_theme_menus() {
-	register_nav_menus(
-		array(
-			'header-menu'  => __( 'Header Menu' )
-		)
-	);
+    register_nav_menus(
+        array(
+        'header-menu-right'  => __( 'Header Menu Right' ),
+        'header-menu-left'  => __( 'Header Menu Left' )
+        )
+    );
 }
 add_action( 'init', 'register_theme_menus' );
 

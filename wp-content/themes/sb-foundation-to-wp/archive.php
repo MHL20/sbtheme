@@ -2,9 +2,9 @@
 
 <!-- STATIC PAGE CONTENT START -->
 <!-- STATIC LANDING PAGE MAIN BODY START -->
-<div class="row sb-first-row">
+<div class="row sb-first-row sb-last-row" data-equalizer>
   <!-- STATIC LANDING PAGE MAIN COLUMN START -->
-  <div class="small-10 small-centered large-8 large-uncentered columns">
+  <div class="small-10 small-centered large-8 large-uncentered columns" data-equalizer-watch>
 
     <div class="leader">
       <h1><?php wp_title( '' ); ?> Blog Posts</h1>
@@ -34,10 +34,8 @@
         </div>
       <?php endif; ?>
       <p><?php echo strip_tags( get_the_excerpt() ); ?></p>
-      
+      </article>
 
-      
-    </article>
   <hr />
 
 <?php endwhile; else : ?>
@@ -49,21 +47,23 @@
 
 
 </div>
-<!-- STATIC LANDING PAGE MAIN COLUMN END -->
 
-<!-- STATIC LANDING PAGE SIDEBAR START -->
+<!-- POST PAGE MAIN COLUMN END -->
 
+<!-- POST PAGE SIDEBAR START -->
 
-<?php get_sidebar( 'blog' ); ?>
+<div class="small-10 small-centered large-4 large-uncentered columns show-for-large-up sb-sidebar" data-equalizer-watch>
+  <div>
 
-<!--       <div>
-        <h5>This is a Social Brew Sidebar</h5>
-        <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      </div> -->
-      <!-- </div> -->
-      <!-- STATIC LANDING PAGE SIDEBAR END -->
+    <?php get_sidebar( 'blog' ); ?>
 
-    </div>
-    <!-- STATIC LANDING PAGE MAIN BODY END -->
+  </div>
+</div>
 
-    <?php get_footer(); ?>
+<!-- POST PAGE SIDEBAR END -->
+
+</div>
+
+<!-- POST PAGE MAIN BODY END -->
+
+<?php get_footer(); ?>

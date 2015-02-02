@@ -57,23 +57,37 @@ body, .sb-landing-feature {
 	line-height: 1.4em;
 	margin-top: 0;
 	margin-bottom: 3em;
+	color: #8ae3e6;
 }
 
 .sb-sidebar .widget h3 {
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 1.25em;
-	color: #8ae3e6;
+	color: #17a5aa; /*#8ae3e6;*/
 }
 
 .sb-sidebar .widget a {
-	color: #8ae3e6;
+	color: #1c7276;		/* #8ae3e6; */
+	font-weight: 700;
+}
+
+.sb-sidebar .widget td a {
+	color: #204042;		/* #8ae3e6; */
 	font-weight: 700;
 }
 
 .sb-sidebar .widget a:hover {
-	color: #14c6cc;
+	color: #8ae3e6;		/* #14c6cc; */
 	font-weight: 700;
+}
+
+.sb-sidebar .widget .gabfire-tweets a {
+	color: #43d1d6;
+}
+
+.sb-sidebar .widget .gabfire-tweets a:hover {
+	color: #8ae3e6;
 }
 
 .sb-widget .widget li {
@@ -131,9 +145,13 @@ footer .widget .button {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: #d0f4f5;
+	color: #14aeb3;
 }
 
+.sb-sidebar ul {
+	list-style-type: none;
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+}
 
 /* SocialBrew Menu Style Tweeks */
 
@@ -179,6 +197,15 @@ nav .top-bar > ul #menu-menu-1 {
 .sb-landing-widgets h3 {
 	color: #ccb114;
 }
+
+.sb-sidebar .tagcloud a {
+	color: #1c7276; /*#8ae3e6;*/
+}
+
+.sb-sidebar .tagcloud a:hover {
+	color: #8ae3e6; /*#14c6cc;*/
+}
+
 
 /*.sb-first-row .widget {
 	margin-bottom: 0px;

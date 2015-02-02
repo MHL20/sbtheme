@@ -32,6 +32,8 @@
       <?php comments_template(); ?>
     </article>
 
+  <hr />
+
 <?php endwhile; else : ?>
 
   <h2>Oh no!</h2>
@@ -41,10 +43,10 @@
 
 
 </div>
+
 <!-- POST PAGE MAIN COLUMN END -->
 
 <!-- POST PAGE SIDEBAR START -->
-
 
 <div class="small-10 small-centered large-4 large-uncentered columns show-for-large-up sb-sidebar" data-equalizer-watch>
   <div>
@@ -60,4 +62,4 @@
 
 <!-- POST PAGE MAIN BODY END -->
 
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
