@@ -12,7 +12,7 @@
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <article class="post">
+    <article <?php post_class('post'); ?>>
 
       <h3 class="sb-post"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
@@ -40,12 +40,20 @@
 
   <hr />
 
+
+
+
 <?php endwhile; else : ?>
 
   <h2>Oh no!</h2>
   <p>No content is appearing for this page!</p>
 
 <?php endif; ?>
+
+  <!-- Add the pagination functions here. -->
+
+    <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+    <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
 
 </div>

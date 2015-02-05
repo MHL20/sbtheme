@@ -23,7 +23,7 @@
     <ul class="example-orbit" data-orbit data-options="bullets:false; slide_number:false; stack_on_small: false; pause_on_hover: false; timer_speed: 05750">
       <li style="background-image: url(<?php bloginfo('template_directory'); ?>/images/landing_feature_1.jpg);" alt="slide 1">
         <div class="orbit-caption">
-          <h1 class="text-center">Crack The Code</h1>
+          <h1 class="text-center">Tap Into The Code</h1>
         </div>
       </li>
       <li style="background-image: url(<?php bloginfo('template_directory'); ?>/images/landing_feature_2.jpg);" alt="slide 2">
