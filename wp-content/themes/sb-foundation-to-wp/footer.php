@@ -20,7 +20,7 @@
 
       <div class="row">
         <div class="small-10 small-centered large-12 columns">
-          <p class="text-center sb-ftr-info">&copy; <?php echo date('Y'); ?> <span>Social<strong>Brew</strong></span>&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;Los Angeles, CA&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;@<span>Social<strong>Brew</strong></span>Us&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;213 422 0537<br />
+          <p class="text-center sb-ftr-info">&copy; <?php echo date('Y'); ?> <span>Social<strong>Brew</strong></span>&emsp;|&emsp;Los Angeles, CA&emsp;|&emsp;@<span>Social<strong>Brew</strong></span>Us&emsp;|&emsp;213 422 0537<br />
             Created with CurseWords</p>
           </div>
         </div>
@@ -31,11 +31,6 @@
 
       <?php wp_footer(); ?>
 
-      <script>
-        (function($) {
-          jQuery(document).foundation() 
 
-        })(jQuery);
-      </script>
     </body>
     </html>

@@ -34,7 +34,7 @@
         <?php the_post_thumbnail( 'large' ); ?>
       </div>
     <?php endif; ?>
-    <p><?php echo strip_tags( get_the_excerpt() ); ?></p>
+    <p><?php echo get_the_excerpt(); ?></p>
 
   </article>
 
@@ -52,8 +52,8 @@
 
   <!-- Add the pagination functions here. -->
 
-    <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-    <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+    <div class="nav-previous alignleft sb-readmore-link"><?php next_posts_link( '&laquo; Older' ); ?></div>
+    <div class="nav-next alignright sb-readmore-link"><?php previous_posts_link( 'Newer &raquo;' ); ?></div>
 
 
 </div>

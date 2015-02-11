@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/sb-favicon.png">
   <title>
-    <?php bloginfo( 'name' ); ?>
     <?php wp_title( '|', true, 'left' ); ?>
   </title>
 

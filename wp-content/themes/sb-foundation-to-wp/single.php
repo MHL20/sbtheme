@@ -41,6 +41,12 @@
 
 <?php endif; ?>
 
+  <!-- Add the pagination functions here. -->
+
+  <div class="sb-post-nav">
+    <div class="nav-previous alignright sb-readmore-link"><?php next_post( '% ', 'next post &raquo;', 'no' ); ?></div>
+    <div class="nav-next alignleft sb-readmore-link"><?php previous_post( ' %', '&laquo; previous post', 'no' ); ?></div>
+  </div>
 
 </div>
 

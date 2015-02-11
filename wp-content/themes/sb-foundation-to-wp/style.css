@@ -1,16 +1,10 @@
 /*
 Theme Name: SB Foundation to WordPress
-Theme URI: http://socialbrew.us/test/sb-foundation-to-wordpress
-Author: Mark Rakow
-Author URI: http://markerakow.com/
+Theme URI: http://socialbrew.us/sb-foundation-to-wordpress
 Description: Starter theme for new SocialBrew website created with Foundation 5
-Version: 1.0
 License: GNU General Public License v2 or later
 License: URI http://www.gnu.org/license/gpl-2.0.html
 Text Domain: sb-foundation-to-wordpress
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 /* SocialBrew Body Bubble Motif and Orbit Slider Tweaks */
@@ -21,30 +15,24 @@ body, .sb-landing-feature {
 	background-attachment: fixed;
 	background-image: url('http://socialbrew.us/test/wp-content/themes/sb-foundation-to-wp/images/sb-bubbles-bg.png');
 }
-
 .sb-last-row {
 	margin-bottom: 3em;
 }
-
 .slideshow-wrapper {
 	width: 100%;
   height: 100%;
 }
-
 .orbit-container {
 	height: 100%;
 }
-
 .alignleft {
 	display: inline;
 	float: left;
 }
-
 .alignright {
 	display: inline;
 	float: right;
 }
-
 .aligncenter {
 	display: block;
 	margin-right: auto;
@@ -63,23 +51,12 @@ body, .sb-landing-feature {
 .fixed {
 	margin-top: 0px;
 }
-.menu-item {
-	background-color: #4f3a1a;
-}
-.toggle-topbar a {
-	color: rgba(136, 136, 136, 0);
-}
-nav .top-bar > ul #menu-menu-1 {
-	background-color: #593900 !important;
-}
 
 
 /* SocialBrew Sidebar Bubble Motif */
 
 .sb-sidebar {
-	font-family: "proxima nova", Helvetica, Arial, sans-serif;
 	background-color: #204042;
-	color: #d0f4f5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -96,6 +73,7 @@ nav .top-bar > ul #menu-menu-1 {
 	margin-top: 0;
 	margin-bottom: 3em;
 	color: #8ae3e6;
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
 }
 .sb-sidebar .widget h3 {
 	text-transform: uppercase;
@@ -103,22 +81,21 @@ nav .top-bar > ul #menu-menu-1 {
 	font-size: 1.25em;
 	color: #17a5aa; /*#8ae3e6;*/
 }
+.textwidget p, .gabfire-tweets {
+	margin-left: 0px;
+	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+	font-size: .9em;
+}
+.gabfire-tweets li {
+	margin-bottom: .9em;
+}
 .sb-sidebar .widget a {
-	color: #1c7276;		/* #8ae3e6; */
+	color: #43d1d6;
 	font-weight: 700;
 }
 .sb-sidebar .widget a:hover {
-	color: #8ae3e6;		/* #14c6cc; */
-	font-weight: 700;
-}
-.sb-sidebar .widget .gabfire-tweets a {
-	color: #43d1d6;
-}
-.sb-sidebar .widget .gabfire-tweets a:hover {
 	color: #8ae3e6;
-}
-.sb-widget .widget li {
-	font-family: "proxima nova", Helvetica, Arial, sans-serif;
+	font-weight: 700;
 }
 
 
@@ -212,8 +189,22 @@ footer .widget .button {
 
 /* SocialBrew Blog Style Tweeks */
 
+article h3 a {
+	color: #6d2d05;
+}
+
+.small-10 hr, .large-8 hr {
+	color: #ffc559;
+	background-color: #fff;
+	border: 1px solid;
+    border-style: none none solid;
+}
+
 .sb-post {
 	margin-bottom: 0px;
+}
+.sb-post-nav {
+	margin-bottom: 1em;
 }
 .sb-meta {
 	list-style: none;
@@ -293,6 +284,11 @@ footer .widget .button {
 	color: #914517;
 	margin-bottom: 2em;
 }
+.sb-left {
+	float: left;
+	margin-right: 1em;
+}
+
 .sb-body-image img {
 	width: 100%;
 }
@@ -365,19 +361,3 @@ footer .widget .button {
 }
 
 
-/* SocialBrew Gabfire Twitter Feed Widget Tweeks */
-
-.gabfire-tweets, .textwidget p {
-	margin-left: 0px;
-	font-family: "proxima nova", Helvetica, Arial, sans-serif;
-	font-size: .9em;
-}
-.gabfire-tweets li {
-	margin-bottom: .9em;
-}
-.gabfire-tweets li a {
-	color: #8ae3e6;
-}
-.gabfire-tweets li a:hover {
-	color: #14c6cc;
-}
